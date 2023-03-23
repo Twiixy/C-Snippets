@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Apache Wicket Quickstart</title>
+        <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="menu">
+
+                <div wicket:id="menu"></div>
+            </div>
+            <div class="main">
+
+                <h1>Verwaltung</h1>
+
+                <form wicket:id="formAddBetreuer">
+                    <button class="btn-primary" type="button" wicket:id="addBetreuerbtn" >
+                        Betreuer hinzufügen
+                    </button>
+                </form>
+                <a wicket:id="hide_show_link_Ausbilder"><div wicket:id="showAusbilderList"></div></a>
+                <div wicket:id="ausbilderContainer" class="mb-20" >
+                    <table class="fillContent textCenter" >
+                        <tr class="tableHeadColor">
+                            <td>Ausbilder</td>
+                            <td>Azubis</td>
+                            <td>Bearbeiten</td>
+                        </tr>
+                        <div wicket:id="UniListview">
+                            <tr>
+                                <td><div wicket:id="ausbilderName"></div></td>
+                                <td><div wicket:id="azubiNamen"></div></td>
+                                <td><a wicket:id="editlink">Bearbeiten</a></td>
+                            </tr>
+                        </div>
+                    </table>
+
+                </div>
+                
+                
+                <!--------------------->
+                
+                <form wicket:id="formAddAzubi" class="mt-10">
+                    <button class="btn-primary" type="button" wicket:id="addStudentbtn" >
+                        Student hinzufügen
+                    </button>
+                </form>
+                
+                <a wicket:id="hide_show_link_Azubi"><div wicket:id="showAzubiList"></div></a>
+                <div wicket:id="azubiContainer" class="mb-20" >
+                    <table class="fillContent textCenter" >
+                        <tr class="tableHeadColor">
+                            <td>Azubi</td>
+                            <td>Betreuer</td>
+                            <td>Bearbeiten</td>
+                        </tr>
+                        <div wicket:id="AListview">
+                            <tr>
+                                <td><div wicket:id="azubiName1"></div></td>
+                                <td><div wicket:id="BetreuerNamen1"></div></td>
+                                <td><a wicket:id="editlink2">Bearbeiten</a></td>
+                            </tr>
+                        </div>
+                    </table>
+
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+        <div class="wrapper2" wicket:id="swtbild"></div>
+
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Apache Wicket Quickstart</title>
+        <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="menu">
+
+                <div wicket:id="menu"></div>
+            </div>
+            <div class="main">
+                
+                     <div wicket:id="feedback" class="feedback" >.</div>
+
+                <h1>Student hinzufügen</h1>
+
+                <form wicket:id="form">
+                    <table>
+                        <tr>
+                            <th>Vorname</th>
+                            <th>
+                                <div class="mt-10">
+                                    <textarea class="ml-10 mr-10" wicket:id="taVorname" rows="1" cols="100" required></textarea>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>Nachname</th>
+                            <th>
+                                <div class="mt-10">
+                                    <textarea class="ml-10 mr-10"  wicket:id="taNachname" rows="1" cols="100" required></textarea>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>E-Mail</th>
+                            <th>
+                                <div class="mt-10">
+                                    <textarea  class="ml-10 mr-10" wicket:id="taEmail" rows="1" cols="100" required></textarea>
+                                </div>
+                            </th>
+                        </tr>
+
+                        <tr>
+                            <th>Betrieb</th>
+                            <th>
+                                <div class="mt-10">
+                                    <textarea  class="ml-10 mr-10" wicket:id="taBetrieb" rows="1" cols="100" required></textarea>
+                                </div>
+                            </th>
+                        </tr>
+                        
+                        <tr>
+                            <th>Passwort</th>
+                            <th>
+                                <div class="mt-10">
+                                    <textarea  class="ml-10 mr-10" wicket:id="taPasswort" rows="1" cols="100" required></textarea>
+                                </div>
+                            </th>
+                        </tr>
+
+                        
+
+                        <tr>
+                            <td>
+                                <button class="btn-primary" type="submit" wicket:id="speicherbtn" >
+                                    speichern
+                                </button>
+                            </td>
+                            <td>
+                                <button class="btn-danger" type="button" wicket:id="cancelbtn" >
+                                    Abbrechen
+                                </button>
+                            </td>
+                        </tr>
+
+                    </table>
+
+
+
+
+
+
+
+
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>

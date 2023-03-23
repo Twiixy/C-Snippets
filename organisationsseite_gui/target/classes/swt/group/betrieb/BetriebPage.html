@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Apache Wicket Quickstart</title>
+        <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+    </head>
+    <body>
+        <div class="wrapper">
+
+            <div class="menu">
+
+                <div wicket:id="menu"></div>
+            </div>
+            <div class="main">
+                <h1>Ausbildung</h1>
+                <form wicket:id="formDropDown" class="mb-20">
+
+                    <div>
+                        Student auswählen
+                    </div>
+                    <div >
+                        <select id="blubb"  class="" wicket:id="DropDownAzubis"></select>
+                    </div>
+                    <button class="btn-primary" type="button" wicket:id="ddbtn" >
+                        Daten aufrufen
+                    </button>
+                </form>
+
+
+                <div wicket:id="all" class="mt-10">
+
+                    <div wicket:id="UniListview" >
+
+                        <a  wicket:id="hide_show_link"><div class="mt-10" wicket:id="aufgabenstatus"></div></a>
+
+                        <div wicket:id="lvContainer" >
+
+                            <form wicket:id="form">
+                                <div wicket:id="betriebsDataLV">
+                                    <div wicket:id="lv2Container" >
+
+                                        <table>
+
+                                            <tr>
+                                                <td>Titel</td>
+                                                <td>
+                                                    <div class="position-relative">
+                                                        <textarea class="rwth-form-control ps-5 fw-bold" wicket:id="titelarea" rows="1" cols="100" ></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Beschreibung</td>
+                                                <td>
+                                                    <div class="position-relative">
+                                                        <textarea class="rwth-form-control ps-5 fw-bold" wicket:id="beschreibungarea" rows="3" cols="100" ></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Kommentar</td>
+                                                <td>
+                                                    <div class="position-relative">
+                                                        <textarea class="rwth-form-control ps-5 fw-bold" wicket:id="kommentararea" rows="3" cols="100" ></textarea>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn-danger" type="button" wicket:id="deletebtn" >
+                                                        löschen
+                                                    </button>
+
+                                                </td>
+                                                <td>
+                                                    <button class="btn-primary" type="button" wicket:id="stateswitchbtn" >
+                                                        Aufgabe abschließen/aufnehmen
+                                                    </button>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn-primary" type="button" wicket:id="speicherbtn" >
+                                                        speichern
+                                                    </button>
+
+                                                </td>
+                                                <td>
+
+
+                                                </td>
+                                            </tr>
+
+                                        </table>
+
+                                    </div>
+
+
+                                </div>
+
+                            </form>
+
+                            <div class="mt-10">
+                                <button class="btn-sec" type="button" wicket:id="addbtn" >
+                                    Aufgabe hinzufügen
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper2" wicket:id="swtbild"></div>
+
+    </body>
+</html>

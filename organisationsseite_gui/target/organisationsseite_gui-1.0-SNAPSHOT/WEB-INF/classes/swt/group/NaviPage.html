@@ -1,0 +1,53 @@
+<html xmlns:wicket="http://wicket.apache.org"
+      xmlns="http://www.w3.org/1999/xhtml"
+      >
+    <head>
+        <meta charset="utf-8" />
+        <title>Navigation</title>
+        <link href='https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:regular,bold' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="Stylesheet" />
+    </head>
+    <body>
+    <wicket:panel>
+        
+      
+        <div class="naviName">
+            Navigation
+        </div>
+        <div>    
+            <label wicket:id="LoginInfoLabel">You are not logged in.</label>
+        </div>
+        <div>    
+            <a wicket:id="InfoPage">
+                 <label wicket:id="InfoLabel">Informationen</label>
+            </a>
+        </div>
+
+        <div>    
+            <a wicket:id="UniPage">
+                 <label wicket:id="UniLabel">Uni</label>
+            </a>
+        </div>
+        
+         <div>    
+            <a wicket:id="BetriebPage">
+                 <label wicket:id="BetriebLabel">Betrieb</label>
+            </a>
+        </div>        
+
+        <div>    
+            <a wicket:id="VerwalterPage">
+                 <label wicket:id="VerwalterLabel">Verwalten</label>
+            </a>
+        </div>
+        
+        <div>    
+            <a wicket:id="LogPage">
+                <label wicket:id="LogLabel">Login/out</label>
+            </a>
+        </div>
+        
+        
+    </wicket:panel>
+</body>
+</html>
